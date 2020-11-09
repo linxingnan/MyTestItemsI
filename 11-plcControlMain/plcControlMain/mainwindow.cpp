@@ -14,7 +14,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),digModData(nullptr),haveDataMod(false),delayNum(0),digCheck(nullptr)
-{
+{//测试修改
     setMinimumSize(1200,600);
     ui->setupUi(this);
 
