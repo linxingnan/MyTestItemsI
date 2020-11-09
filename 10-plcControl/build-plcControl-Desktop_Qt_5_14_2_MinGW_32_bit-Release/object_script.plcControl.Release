@@ -1,0 +1,12 @@
+release/createnewclient.o
+release/dlogdatachange.o
+release/main.o
+release/mainwindow.o
+release/progressbardelegate.o
+release/tcpthread.o
+release/qrc_image.o
+release/moc_createnewclient.o
+release/moc_dlogdatachange.o
+release/moc_mainwindow.o
+release/moc_progressbardelegate.o
+release/moc_tcpthread.o
