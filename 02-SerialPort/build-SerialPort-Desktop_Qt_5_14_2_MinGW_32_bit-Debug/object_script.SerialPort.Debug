@@ -1,0 +1,10 @@
+debug/mycombobox.o
+debug/qhelper.o
+debug/main.o
+debug/maindata.o
+debug/saveconfigthread.o
+debug/serialthread.o
+debug/moc_mycombobox.o
+debug/moc_maindata.o
+debug/moc_saveconfigthread.o
+debug/moc_serialthread.o

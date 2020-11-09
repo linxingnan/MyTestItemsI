@@ -1,0 +1,10 @@
+release/mycombobox.o
+release/qhelper.o
+release/main.o
+release/maindata.o
+release/saveconfigthread.o
+release/serialthread.o
+release/moc_mycombobox.o
+release/moc_maindata.o
+release/moc_saveconfigthread.o
+release/moc_serialthread.o
