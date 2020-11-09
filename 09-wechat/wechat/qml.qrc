@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>image/icon-friends.svg</file>
+        <file>image/liaotian.svg</file>
+        <file>image/wenjian.svg</file>
+        <file>image/xingxing.svg</file>
+        <file>image/zhengfangti.svg</file>
+        <file>LeftArea.qml</file>
+        <file>ChatWindows.qml</file>
+        <file>IconButton.qml</file>
+        <file>ChatChoose.qml</file>
+        <file>ChatBox.qml</file>
+        <file>image/guanbi-copy.svg</file>
+        <file>image/icon-zhiding.svg</file>
+        <file>image/zuidahua.svg</file>
+        <file>image/zuidahua_1.svg</file>
+        <file>image/zuixiaohua.svg</file>
+        <file>AllChat.qml</file>
+        <file>FriendChoose.qml</file>
+        <file>FriendWindow.qml</file>
+        <file>image/newFriend.png</file>
+        <file>image/head.png</file>
+        <file>FriendBox.qml</file>
+        <file>AllFriend.qml</file>
+    </qresource>
+</RCC>

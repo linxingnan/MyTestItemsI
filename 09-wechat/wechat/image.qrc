@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/icon-friends.svg</file>
+        <file>image/liaotian.svg</file>
+        <file>image/wenjian.svg</file>
+        <file>image/xingxing.svg</file>
+        <file>image/zhengfangti.svg</file>
+    </qresource>
+</RCC>
