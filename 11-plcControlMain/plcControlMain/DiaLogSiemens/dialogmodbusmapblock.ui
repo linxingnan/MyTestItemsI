@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogModbusMapBlock</class>
+ <widget class="QDialog" name="DialogModbusMapBlock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="label_9">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>规则：
+1、对于字映射(3区和4区)，必须以125个字为单位，进行块映射；
+2、对于位映射(0区和1区)，必须以2000个位为单位，进行块映射；
+3、要充分考虑相连续的两个映射块之闰的跨区问题，所以必须保证两个连续的映射块之存在一个映射块大小的空间，防止跨区；
+4、针对上述问题,可以采用“自动分配映射地址”的方法,进行规避；</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Modbus地址区</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>数据区域：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cBOox_Modbus_DataRegion">
+          <item>
+           <property name="text">
+            <string>Coil</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>InputCoil</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>InputRegsiter</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HoldingRegsiter</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>起始地址：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spBox_Mosbus_startsAddr">
+          <property name="maximum">
+           <number>65535</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>终止地址：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spBox_Mosbus_stopAddr">
+          <property name="maximum">
+           <number>65535</number>
+          </property>
+          <property name="value">
+           <number>65535</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../icon.qrc">:/image/icon/shuangxiangjiantou.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>S7PLC地址区</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>数据区域：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cBOox_S7Plc_DataRegion">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>I</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Q</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>M</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DB</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S7200-S</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S7200-SM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S7200-AI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S7200-AQ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S7300-PW</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>DB块号：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spBox_S7Plc_DBBlock">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximum">
+           <number>65535</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>字节偏移：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spBox_S7Plc_byteMove">
+          <property name="maximum">
+           <number>65535</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="puBCheck">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>检查</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>注意：对于S7-200PLC而言，V区对应DB1。偏移地址以字节为单位。</string>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="puBTrue">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>确认</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>puBTrue</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogModbusMapBlock</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

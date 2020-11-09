@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>icon/ceshi.png</file>
+        <file>icon/sousuo.png</file>
+        <file>icon/weibiaoti-.png</file>
+        <file>icon/xiugai2-copy-copy.png</file>
+        <file>icon/zhenduan.png</file>
+        <file>icon/zhuye.png</file>
+        <file>icon/update.png</file>
+        <file>icon/file.png</file>
+        <file>icon/link.svg</file>
+        <file>icon/shanchu.png</file>
+        <file>icon/xinjian.png</file>
+        <file>icon/shuangxiangjiantou.png</file>
+    </qresource>
+</RCC>

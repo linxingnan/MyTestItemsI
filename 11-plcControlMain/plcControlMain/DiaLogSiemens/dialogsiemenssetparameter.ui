@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSiemensSetParameter</class>
+ <widget class="QDialog" name="DialogSiemensSetParameter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1322</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_12">
+   <item row="0" column="0" colspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>70</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>IP地址：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="liEdEquIp">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="puBImportConfig">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>导出所有配置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="puBExportConfig">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>导入所有配置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="puBUpConfig">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>上载参数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="puBDownConfig">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>下载参数</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QListWidget" name="listWidget">
+     <property name="minimumSize">
+      <size>
+       <width>220</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>S7总线接口参数配置</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>以太网接口参数配置</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Modbus映射表</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>数据交换</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Modbus主站</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page_s7Config">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidS7Config">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tabS7Interface">
+          <attribute name="title">
+           <string>S7总线接口</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>BCNet站地址：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Inter_BcNetAddr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置Net模块在S7总线中的主站地址,不能和总线其他站地址相同,范围:0-126,默认为0。</string>
+                 </property>
+                 <property name="maximum">
+                  <number>126</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S7总线最高站地址：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Inter_HightAddr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置s7总线最高站地址,数值不能小于总线上最大的站点地址,通常MPI总线最高站地址为31, Profibus总线上最高站地址为126,范围0-126,默认为31</string>
+                 </property>
+                 <property name="maximum">
+                  <number>126</number>
+                 </property>
+                 <property name="value">
+                  <number>31</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>站点通讯重试次数：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Inter_AddrRetryNum">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置通讯失败的尝试次数,范围0-8,默认为3。</string>
+                 </property>
+                 <property name="maximum">
+                  <number>8</number>
+                 </property>
+                 <property name="value">
+                  <number>3</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>地址间隔刷新次数：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Inter_ReFreshNum">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>s7总线上其他站点的刷新间隔系数,范围1-100,默认为10</string>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>100</number>
+                 </property>
+                 <property name="value">
+                  <number>10</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S7总线通讯协议模式：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Inter_ChatMode">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置Net与PLC通讯采用的协议模式,对于s7200只能选择[PPI]和[MPI从站]协议,对于s7300可以选择任意协议模式</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>PPI</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>MPI从站</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>MPI主从站</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>PROFIBUS</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S7总线通讯波特率：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Inter_ChatBaud">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>指定PLC的S7总线通讯口的波特率,也可以由Net自动识别s7总线的波特率</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>9600bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>19200bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>45450bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>93750bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>187.5Kbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>500Kbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>1.5Mbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>3Mbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>6Mbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>自动识别</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>283</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>178</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabExtendInterface">
+          <attribute name="title">
+           <string>扩展总线接口</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>功能选择：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Extend_FunChoose">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置桥接型模块,扩展总线(DB9母口)的功能选择。</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>HMI</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Modbus从站</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Modbus主站</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>波特率：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Extend_Baud">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置桥接型模块,扩展总线(DB9母口)的波特率选择。</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>1200bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>2400bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>4800bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>9600bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>19200bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>38400bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>56000bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>57600bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>115200bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>128000bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>187500bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>256000bps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>自动识别</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLabel" name="label_13">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>数据位：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Extend_DataBit">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>5</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>6</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>7</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>8</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLabel" name="label_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>校验位：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Extend_CheckBit">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>奇校验</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>偶校验</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <widget class="QLabel" name="label_15">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>停止位：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7Extend_StopBit">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>1.5</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>2</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>通讯同步（毫秒）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Extend_ChatSyn">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <number>500</number>
+                 </property>
+                 <property name="value">
+                  <number>30</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>通讯超时（毫秒）</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spBox_S7Extend_ChatTimeOut">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <number>10000</number>
+                 </property>
+                 <property name="value">
+                  <number>3000</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>299</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>93</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>注：此界面配置只对桥接型模块有效，且BCNet-S7300PLUS桥接型版本支持Modbus主从站功能，其他版本只能支持HMI功能；HMI功能只支持PPI协议模式，即S7200PLC上专属功能；
+</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_netConfig">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidNetConfig">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabNetInterConfig">
+          <attribute name="title">
+           <string>以太网接口</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>ip地址  </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="liEd_Net_Ip">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>192.168.1.104</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QLabel" name="label_17">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>子网掩码</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="liEd_Net_Subnet">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>255.255.255.0</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <widget class="QLabel" name="label_18">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>网关地址</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="liEd_Net_Gateway">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>192.168.1.1</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>383</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>259</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabS7TcpServer">
+          <attribute name="title">
+           <string>S7TCP服务器</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QLabel" name="label_19">
+                 <property name="minimumSize">
+                  <size>
+                   <width>250</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>服务器通讯端口号</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="liEd_S7TCP_ServerPort">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置S7TCP服务器的通讯端口号,默认为102</string>
+                 </property>
+                 <property name="text">
+                  <string>102</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <widget class="QLabel" name="label_20">
+                 <property name="minimumSize">
+                  <size>
+                   <width>250</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>默认目标PLC地址：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="liEd_S7TCP_TargetPlcIp">
+                 <property name="minimumSize">
+                  <size>
+                   <width>230</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>设置SC7TCP默认目标PLC地址,默认为2</string>
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QLabel" name="label_21">
+                 <property name="minimumSize">
+                  <size>
+                   <width>250</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>通讯目标PLC地址由槽号决定：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cBox_S7TCP_Open">
+                 <property name="toolTip">
+                  <string>开启或关闭S7TCP目标PLC地址由槽号决定,关闭后S7TCP的请求的目标PLC地址将由【默认PLC目标地址】参数决定</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>关闭</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>开启</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>279</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>259</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabModBusTcpServer">
+          <attribute name="title">
+           <string>ModbusTcp服务器</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>服务器通讯端口号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="liEd_Mod_chatPort">
+               <property name="minimumSize">
+                <size>
+                 <width>230</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Modbustcp服务器的端口号,默认为502</string>
+               </property>
+               <property name="text">
+                <string>502</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>265</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>400</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabBcnetS7Server">
+          <attribute name="title">
+           <string>BCNetS7协议服务器</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QLabel" name="label_23">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>服务器通讯端口号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="liEd_BcNetS7_ChatPort">
+               <property name="minimumSize">
+                <size>
+                 <width>230</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>1099</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>265</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>400</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabWebConfig">
+          <attribute name="title">
+           <string>Web选项</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkB_Web">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>禁止Web页面配置。（禁用后将无法通过浏览器配置设备参数）</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>303</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>412</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_ModbusMap">
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_NewMap">
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>新建映射块</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_EditMap">
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>编辑映射块</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_DelMap">
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>删除映射块</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_DefaultMap">
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>默认配置</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_FindMap">
+              <property name="minimumSize">
+               <size>
+                <width>110</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>映射地址查询</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_DistriMap">
+              <property name="minimumSize">
+               <size>
+                <width>190</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>220</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>自动分配映射地址（推荐）</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_ImportModMap">
+              <property name="minimumSize">
+               <size>
+                <width>140</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>导入Modbus映射表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="puB_ModMap_ExportModMap">
+              <property name="minimumSize">
+               <size>
+                <width>140</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>导出Modbus映射表</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTableWidget" name="tableModbusMap"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labMessage">
+        <property name="text">
+         <string>……</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

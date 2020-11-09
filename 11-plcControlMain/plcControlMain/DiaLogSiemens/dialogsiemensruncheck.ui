@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSiemensRunCheck</class>
+ <widget class="QDialog" name="DialogSiemensRunCheck">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0" colspan="3">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string> </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>471</width>
+          <height>19</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>设备诊断连续性：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="value">
+           <number>24</number>
+          </property>
+          <property name="textVisible">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>S7Bus接口信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="5" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>正确响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_TrueChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>当前波特率：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_NowSerialData">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>S7总线状态：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_Status">
+          <property name="text">
+           <string>PLC型号：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>错误响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_ErrCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>S7协议模式：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_WorkMode">
+          <property name="text">
+           <string>--协议</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>自动波特率：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_AutoSerialData">
+          <property name="text">
+           <string>串行通信参数</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>通讯请求总数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_ChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>以太网接口信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>TCP连接总数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_TcpLinkNum">
+          <property name="text">
+           <string>TCP连接数</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>S7TCP连接数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_s7TcpPort">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>ModbusTcp连接数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_ModbusLinkNum">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_30">
+          <property name="text">
+           <string>BCNetS7连接数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_s7_BcNetS7LinkNum">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>通讯请求总数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_ChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <widget class="QLabel" name="label_44">
+          <property name="text">
+           <string>正确响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_TrueChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_46">
+          <property name="text">
+           <string>错误响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Net_ErrCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>HMI端</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>扩展总线模式：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Hmi_WorkMode">
+          <property name="text">
+           <string>--协议</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>串行通信参数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Hmi_SerialData">
+          <property name="text">
+           <string>串行通信参数</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>通讯请求总数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Hmi_ChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>正确响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Hmi_trueChatCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>错误响应次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Hmi_ErrCount">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>系统运行信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>系统运行时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Sys_RunTime">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>上次内部故障：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>无故障</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="QLabel" name="label_47">
+          <property name="text">
+           <string>通讯代码</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_Sys_chatCode">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>S7总线地址表</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="3">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="maximumSize">
+      <size>
+       <width>1100</width>
+       <height>300</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>注：M代表S7总线中的主站，S代表S7总线中的从站。</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

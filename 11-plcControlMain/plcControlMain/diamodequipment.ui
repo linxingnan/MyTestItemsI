@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiaModEquipment</class>
+ <widget class="QDialog" name="DiaModEquipment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1137</width>
+    <height>807</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>1100</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>设备信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>设备名称</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labEquName">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>固件版本</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labFirmVer">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>IP地址</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labIpAddr">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>序列号</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labserialNum">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>OEM标识</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labReamrks">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>MAC地址</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labMacAddr">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>出厂日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labGoDate">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>协议品牌</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labBrand">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>基本设置</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>自动识别PLC型号</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>系统工作模式</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QComboBox" name="cBoxAutoPlcModel">
+              <item>
+               <property name="text">
+                <string>关闭</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>开启</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cBoxWorkMode">
+              <item>
+               <property name="text">
+                <string>以太网协议模式</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>串行协议模式</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>HMI通讯参数自适应</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>通讯重试次数</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="3">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QComboBox" name="cBoxHmiSelfAda">
+              <item>
+               <property name="text">
+                <string>关闭</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>开启</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cBoxReTry">
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3(默认)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>高级设置</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="title">
+             <string>PLC端</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15">
+                   <item>
+                    <widget class="QLabel" name="label_23">
+                     <property name="text">
+                      <string>PLC型号</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cBoxPlcModel">
+                     <item>
+                      <property name="text">
+                       <string>FX3U/FX3G</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>FX1N/FX2N</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>FX1S</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <item>
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>校验位</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_5">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>偶校验</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>奇校验</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_14">
+                   <item>
+                    <widget class="QLabel" name="label_22">
+                     <property name="text">
+                      <string>波特率</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cBoxPlcBaudRate">
+                     <item>
+                      <property name="text">
+                       <string>9600</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>19200</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>38400</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>57600</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>115200</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                   <item>
+                    <widget class="QLabel" name="label_24">
+                     <property name="text">
+                      <string>停止位</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_8">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>1</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>1.5</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>2</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>数据位</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_9">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="editable">
+                    <bool>false</bool>
+                   </property>
+                   <property name="currentIndex">
+                    <number>1</number>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>8</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>7</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="title">
+             <string>HMI端</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_24">
+                   <item>
+                    <widget class="QLabel" name="label_29">
+                     <property name="text">
+                      <string>波特率</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cBoxHmiBaudRate">
+                     <item>
+                      <property name="text">
+                       <string>9600</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>19200</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>38400</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>57600</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>115200</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_25">
+                   <item>
+                    <widget class="QLabel" name="label_30">
+                     <property name="text">
+                      <string>数据位</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_12">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>7</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>8</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>6</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>5</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_27">
+                   <item>
+                    <widget class="QLabel" name="label_31">
+                     <property name="text">
+                      <string>校验位</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_13">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>偶校验</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>奇校验</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_28">
+                   <item>
+                    <widget class="QLabel" name="label_32">
+                     <property name="text">
+                      <string>停止位</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_14">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>1</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>1.5</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>2</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>87</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>241</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>65</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>IP地址               </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="liEdIpAddr">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>192.168.1.178</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>65</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>子网掩码             </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="liedSubnetMask">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>255.255.255.0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>65</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>网关地址             </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="liGateway">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>192.168.1.1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_22">
+           <item>
+            <widget class="QLabel" name="label_35">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>65</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>端口号               </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="liPort">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>5551</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_36">
+             <property name="minimumSize">
+              <size>
+               <width>135</width>
+               <height>65</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>ModbusTcp开放数(0-4)  </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="liEdModbusLinkNum">
+             <property name="minimumSize">
+              <size>
+               <width>450</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>241</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>87</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="puBDown">
+     <property name="text">
+      <string>下载</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DiaModEquipment</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DiaModEquipment</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
