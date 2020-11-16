@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QComboBox>
-#define DEBUG 1
+#define DEBUG 0
 //mb文件指令 字符串 位置
 #define MB_ROW_START                0
 #define MB_ROW_COUNT                2

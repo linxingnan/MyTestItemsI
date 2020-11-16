@@ -44,6 +44,8 @@ void HandleReData::parsingData(QString data)
     qDebug()<<"handleBrandNum "<<handleBrandNum;
     bool ok;
     QStringList list = data.split(" ");
+    if(list.size()<7)
+        return;
     if(list.at(6).toInt(&ok,16) == FUN_FIND)
     {
         setUdpData(data);
@@ -88,6 +90,8 @@ void HandleReData::parsingData(QString data)
         qDebug()<<"诊断--返回";
         setCheckData(data);
     }
+    else
+        return;
 }
 
 void HandleReData::dataDownloadToSend(QString ip,QList<int> listCom, QStringList listNetData)

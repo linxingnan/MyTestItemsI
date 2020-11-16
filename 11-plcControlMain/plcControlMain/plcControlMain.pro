@@ -76,7 +76,7 @@ FORMS += \
     mainwindow.ui \
     update/dlogdatachange.ui \
     windowupdate.ui
-#CONFIG += console
+CONFIG += console
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

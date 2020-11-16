@@ -76,7 +76,7 @@ void MainWindow::initAction()
     actUpdate.setText("固件更新");
     actUpdate.setIcon(QIcon(":/image/icon/update.png"));
 
-    actTest.setText("对话框界面测试");
+//    actTest.setText("对话框界面测试");
 
 }
 
@@ -117,7 +117,7 @@ void MainWindow::AddDropDownToolbox()
     ui->toolBar->addAction(&actSetMainPage);
     ui->toolBar->addAction(&actChat);
     ui->toolBar->addAction(&actUpdate);
-    ui->toolBar->addAction(&actTest);
+//    ui->toolBar->addAction(&actTest);
 
     connect(&actFindFast, &QAction::triggered, this, &MainWindow::on_actionTriggered);
     connect(&actFindAll, &QAction::triggered, this, &MainWindow::on_actionTriggered);
@@ -130,7 +130,7 @@ void MainWindow::AddDropDownToolbox()
     connect(&actChat, &QAction::triggered, this, &MainWindow::on_actionTriggered);
     connect(&actUpdate, &QAction::triggered, this, &MainWindow::on_actionTriggered);
 
-    connect(&actTest, &QAction::triggered, this, &MainWindow::on_actionTriggered);
+//    connect(&actTest, &QAction::triggered, this, &MainWindow::on_actionTriggered);
 
     connect(chooseNet, &MyCombox::clicked, this, [=]()
     {
@@ -572,15 +572,15 @@ void MainWindow::on_actionTriggered()
 
     }
 
-    else if(p == &actTest)
-    {
-        DialogSiemensSetParameter *test = new DialogSiemensSetParameter(this);
-        test->setViewData("192.168.1.104");
-        test->exec();
+//    else if(p == &actTest)
+//    {
+//        DialogSiemensSetParameter *test = new DialogSiemensSetParameter(this);
+//        test->setViewData("192.168.1.104");
+//        test->exec();
 
-        delete test;
-        test = nullptr;
-    }
+//        delete test;
+//        test = nullptr;
+//    }
 }
 
 void MainWindow::on_addEquMessage(QStringList list)

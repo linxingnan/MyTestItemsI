@@ -76,6 +76,7 @@ void TcpThread::directSendData(QString data)
 //只做延时发送文件
 void TcpThread::time_sendFile(void)
 {
+    static int i = 0;
     if(tcpSocketSend == nullptr)
         return;
     if(tcpSocketSend->peerPort() == 0)
@@ -101,10 +102,17 @@ void TcpThread::time_sendFile(void)
     }
     else
     {
-        timer_sendFile->stop();
-        sendData->close(); //如果没有发送任何数据，则关闭文件
-        tcpSocketSend->disconnectFromHost();
-        tcpSocketSend->close();
+        i++;
+        if(i == 20)
+        {
+            i = 0;
+            timer_sendFile->stop();
+            sendData->close(); //如果没有发送任何数据，则关闭文件
+            tcpSocketSend->disconnectFromHost();
+            tcpSocketSend->close();
+        }
+
+
     }
 }
 
