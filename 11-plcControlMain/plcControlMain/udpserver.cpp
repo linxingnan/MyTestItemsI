@@ -191,7 +191,7 @@ void UdpServer::dataModbusGet(QString ipAddr, quint16 port)
 bool UdpServer::findLinkUdp()
 {
     udpSocket->abort();
-    for(quint16 port = 5000; port<5005;port++)
+    for(quint16 port = 5000; port<5055;port++)
     {
         if(udpSocket->bind(sendLocalIpaddr, port))
         {
