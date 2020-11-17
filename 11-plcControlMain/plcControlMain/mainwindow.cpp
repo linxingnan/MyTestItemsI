@@ -279,6 +279,8 @@ void MainWindow::initModelHead()
     ui->tableView->setColumnWidth(7,130);
     ui->tableView->setColumnWidth(8,130);
     ui->tableView->setColumnWidth(9,130);
+
+    ui->tableView->hideColumn(10);
 }
 
 QStringList MainWindow::getLocalNetIp()
