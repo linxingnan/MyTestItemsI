@@ -53,6 +53,13 @@ Rectangle {
         anchors.right: root.right;
         anchors.top: root.top;
         anchors.bottom: root.bottom;
+        onLoaded: {
+            item.titleButtonWidth = 40;
+            item.titleButtonHeight = 35;
+            item.iconImageSource = "./icon/image/guanbi-copy.svg";
+            item.hoveColor = "#FA5151";
+            item.noHoveColor = "#F5F5F5";
+        }
     }
     Connections {
         target: closeButton.item;
@@ -66,6 +73,13 @@ Rectangle {
         anchors.right: closeButton.left;
         anchors.top: root.top;
         anchors.bottom: root.bottom;
+        onLoaded: {
+            item.titleButtonWidth = 40;
+            item.titleButtonHeight = 35;
+            item.iconImageSource = "./icon/image/icon-zhiding.svg";
+            item.hoveColor = "#E5E5E5";
+            item.noHoveColor = "#F5F5F5";
+        }
     }
     Connections {
         target: topButton.item;

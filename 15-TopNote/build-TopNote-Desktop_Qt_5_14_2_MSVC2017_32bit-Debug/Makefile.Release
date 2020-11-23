@@ -167,7 +167,10 @@ compiler_rcc_clean:
 release\qrc_qml.cpp: ..\TopNote\qml.qrc \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\rcc.exe \
 		..\TopNote\MyTitle.qml \
-		..\TopNote\main.qml
+		..\TopNote\main.qml \
+		..\TopNote\image\guanbi-copy.svg \
+		..\TopNote\image\head.jpg \
+		..\TopNote\image\icon-zhiding.svg
 	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\rcc.exe -name qml ..\TopNote\qml.qrc -o release\qrc_qml.cpp
 
 compiler_moc_predefs_make_all: release\moc_predefs.h

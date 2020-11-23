@@ -132,20 +132,21 @@ Window {
         ScrollView {
               id: view
               anchors.fill: parent
+
               TextArea {
+                  //无输入时的提示文本
+                  placeholderText: "请输入文本噢,点击右上角即可置顶"
+                  placeholderTextColor: "gray"
+
                   cursorVisible: true;
                   anchors.fill: parent;
                   wrapMode: TextEdit.Wrap//换行
                   font.pixelSize: 20;
-//                  activeFocus: true;
                   focus: true;
-//                  text: "input";
                   textFormat:TextEdit.AutoText
                   selectByMouse:true;
                   selectByKeyboard: true
-//                  onCursorPositionChanged:{
-//                      console.log("onCursorPositionChanged");
-//                  }
+
               }
           }
     }
