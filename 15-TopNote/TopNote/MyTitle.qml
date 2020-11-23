@@ -6,6 +6,7 @@ Rectangle {
 //    height: 35;
 //    width: 200;
     signal closeClicked();
+    signal topClicked();
     signal moveWindow(point delta);
     Component {//标题栏上面三个按钮
                 id:titleButton;
@@ -59,11 +60,24 @@ Rectangle {
             root.closeClicked();
         }
     }
+    Loader {
+        id:topButton
+        sourceComponent: titleButton
+        anchors.right: closeButton.left;
+        anchors.top: root.top;
+        anchors.bottom: root.bottom;
+    }
+    Connections {
+        target: topButton.item;
+        onTitleButtonClicked: {
+            root.topClicked();
+        }
+    }
 
     Rectangle {
         id:titleRet;
         anchors.left: root.left;
-        anchors.right: closeButton.left;
+        anchors.right: topButton.left;
         anchors.top: root.top;
         anchors.bottom: root.bottom;
         color: "#F5F5F5"

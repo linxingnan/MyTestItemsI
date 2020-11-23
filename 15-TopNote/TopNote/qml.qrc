@@ -3,4 +3,9 @@
         <file>main.qml</file>
         <file>MyTitle.qml</file>
     </qresource>
+    <qresource prefix="/icon">
+        <file>image/head.jpg</file>
+        <file>image/guanbi-copy.svg</file>
+        <file>image/icon-zhiding.svg</file>
+    </qresource>
 </RCC>

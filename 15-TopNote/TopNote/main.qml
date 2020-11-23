@@ -16,12 +16,26 @@ Window {
         height: 35;
         anchors.right: parent.right;
         anchors.left: parent.left;
+        property bool setTop: false
         onMoveWindow: {
             root.setX(root.x+delta.x)
             root.setY(root.y+delta.y)
         }
         onCloseClicked: {
             Qt.quit();
+        }
+        onTopClicked: {
+            if(!setTop)
+            {
+                root.flags=Qt.WindowStaysOnTopHint;
+                setTop = true;
+            }
+
+            else
+            {
+                root.flags=Qt.Window;
+                setTop = false;
+            }
         }
     }
     Rectangle {
@@ -100,7 +114,7 @@ Window {
                 var delta = Qt.point(mouseX-clickPos.x, mouseY-clickPos.y)
                 if((root.height+delta.y)>root.minimumHeight)
 //                        root.setHeight(root.height+delta.y)
-                    root.height += delta.y
+                    root.height = root.height+delta.y
                 else
                     root.setHeight(root.minimumHeight)
             }
@@ -114,46 +128,25 @@ Window {
         anchors.left: leftRect.right;
         anchors.right: rightRect.left;
         anchors.bottom: bottomRect.top;
-        color: "#D6D6D6"
-        TextEdit {
-            id:textEdit;
-            width:inputRect.width-vbar.width
-            height: contentHeight
-            selectByMouse:true;
-            selectByKeyboard: true
-            font.pixelSize: 20;
-            y: -vbar.position * textEdit.height
-            text: "headABCDEFGHIJKLABCDEFGHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-            wrapMode: TextEdit.Wrap//换行
-            MouseArea{
+//        color: "#D6D6D6"
+        ScrollView {
+              id: view
               anchors.fill: parent
-              onWheel: {
-                  console.log("vbar.position ",vbar.position);
-                  console.log("textEdit.height ",textEdit.height);
-                  if (wheel.angleDelta.y > 0) {
-                      vbar.decrease();
-                  }
-                  else {
-                      vbar.increase();
-                  }
-              }
-              onClicked: {
-                  textEdit.forceActiveFocus();
+              TextArea {
+                  cursorVisible: true;
+                  anchors.fill: parent;
+                  wrapMode: TextEdit.Wrap//换行
+                  font.pixelSize: 20;
+//                  activeFocus: true;
+                  focus: true;
+//                  text: "input";
+                  textFormat:TextEdit.AutoText
+                  selectByMouse:true;
+                  selectByKeyboard: true
+//                  onCursorPositionChanged:{
+//                      console.log("onCursorPositionChanged");
+//                  }
               }
           }
-        }
-        ScrollBar {
-            id: vbar
-            hoverEnabled: true
-            active: hovered || pressed
-            orientation: Qt.Vertical
-            size: inputRect.height/textEdit.height;
-            width: 10
-            anchors.top: parent.top
-            anchors.right: parent.right
-            anchors.bottom: parent.bottom
-
-        }
-
     }
 }
